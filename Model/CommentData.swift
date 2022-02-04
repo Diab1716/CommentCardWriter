@@ -7,14 +7,14 @@
 
 import Foundation
 
-class CommentData{
-    var enjoyment: Int
-    var effort: Int
-    var subject: String
-    var understanding: Int
-    var weakness: String
+class CommentData: ObservableObject{
+   @Published var enjoyment: Int
+   @Published var effort: Int
+   @Published var subject: Int
+   @Published var understanding: Int
+   @Published var weakness: Int
     
-    init(enjoyment: Int, effort: Int, subject: String, understanding: Int, weakness: String){
+    init(enjoyment: Int, effort: Int, subject: Int, understanding: Int, weakness: Int){
         self.enjoyment = enjoyment
         self.effort = effort
         self.subject = subject
