@@ -17,7 +17,7 @@ struct ContentView: View {
                 commentData.enjoyment = 0
             }
         })
-            Button("Subject: \(commentData.subject)", action: {commentData.subject += 1
+            Button("Subject: \(commentGenerator.subjectPhrases[commentData.subject])", action: {commentData.subject += 1
             if commentData.subject > 4{
                 commentData.subject = 0
             }

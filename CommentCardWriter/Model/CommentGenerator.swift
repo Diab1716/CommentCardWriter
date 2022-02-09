@@ -8,7 +8,7 @@
 import Foundation
 
 class CommentGenerator: ObservableObject{
-    let enjoymentPhrases = ["I am really enjoying" ,"I am enjoying","I am somewhat enjoying", "I am not enjoying", "I am really not enjoying"]
+    let enjoymentPhrases = ["really enjoying" ,"enjoying","somewhat enjoying", "not enjoying", "really not enjoying"]
     let subjectPhrases = ["Computer Science", "Maths", "English", "Physics", "Chemisty"]
     let effortPhrases = ["and think I am working really hard", "and I think I am working quite hard", "and I dont think I am working hard enough", "and I need to work a lot harder"]
     let understandingPhrases = ["I have a great understanding", "I have a good understanding", "I have a decent understanding", "I have a poor understanding"]
@@ -21,7 +21,7 @@ class CommentGenerator: ObservableObject{
         let understandingPhrase = understandingPhrases[data.understanding]
         let weakenssPhrase = weaknessPhrases[data.weakness]
         
-        let comment = "\(enjoymentPhrase) \(subjectPhrase) \(effortPhrase). \(understandingPhrase). \(weakenssPhrase)."
+        let comment = "I am \(enjoymentPhrase) \(subjectPhrase) this half and \(effortPhrase). \(understandingPhrase). \(weakenssPhrase)."
         return comment
         
     }

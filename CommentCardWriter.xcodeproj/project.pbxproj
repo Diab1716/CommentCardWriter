@@ -75,12 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6B669BA27B3D19E00D66A5B /* CommentCardWriter */ = {
+			isa = PBXGroup;
+			children = (
+				B6E951C627AD4C5500F7AFB5 /* Views */,
+				B6E951F227AD4D6800F7AFB5 /* Model */,
+				B6E951CD27AD4C5700F7AFB5 /* Preview Content */,
+			);
+			path = CommentCardWriter;
+			sourceTree = "<group>";
+		};
 		B6E951BB27AD4C5500F7AFB5 = {
 			isa = PBXGroup;
 			children = (
-				B6E951CD27AD4C5700F7AFB5 /* Preview Content */,
-				B6E951F227AD4D6800F7AFB5 /* Model */,
-				B6E951C627AD4C5500F7AFB5 /* Views */,
+				B6B669BA27B3D19E00D66A5B /* CommentCardWriter */,
 				B6E951D727AD4C5700F7AFB5 /* CommentCardWriterTests */,
 				B6E951E127AD4C5700F7AFB5 /* CommentCardWriterUITests */,
 				B6E951C527AD4C5500F7AFB5 /* Products */,
