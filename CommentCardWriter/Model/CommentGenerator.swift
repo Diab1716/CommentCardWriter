@@ -8,10 +8,10 @@
 import Foundation
 
 class CommentGenerator: ObservableObject{
-    let enjoymentPhrases = ["really enjoying" ,"enjoying","somewhat enjoying", "not enjoying", "really not enjoying"]
-    let subjectPhrases = ["Computer Science", "Maths", "English", "Physics", "Chemisty"]
-    let effortPhrases = ["and think I am working really hard", "and I think I am working quite hard", "and I dont think I am working hard enough", "and I need to work a lot harder"]
-    let understandingPhrases = ["I have a great understanding", "I have a good understanding", "I have a decent understanding", "I have a poor understanding"]
+    let enjoymentPhrases = ["really enjoying" ,"enjoying","somewhat enjoying", "not enjoying", "really not enjoying", "hating"]
+    let subjectPhrases = ["Computer Science", "Maths", "English", "Physics", "Chemistry"]
+    let effortPhrases = ["working really hard", "working quite hard", "not working hard enough", "not working anywhere near hard enough"]
+    let understandingPhrases = ["great", "good", "decent", "poor", "shockingly bad"]
     let weaknessPhrases = ["I struggle to work in class", "I struggle with EWs", "I need to ask more question"]
     
     func generateComment(data: CommentData)-> String{
@@ -19,9 +19,9 @@ class CommentGenerator: ObservableObject{
         let subjectPhrase = subjectPhrases[data.subject]
         let effortPhrase = effortPhrases[data.effort]
         let understandingPhrase = understandingPhrases[data.understanding]
-        let weakenssPhrase = weaknessPhrases[data.weakness]
+        let weaknessPhrase = weaknessPhrases[data.weakness]
         
-        let comment = "I am \(enjoymentPhrase) \(subjectPhrase) this half and \(effortPhrase). \(understandingPhrase). \(weakenssPhrase)."
+        let comment = "I am \(enjoymentPhrase) \(subjectPhrase) this half and I think I am \(effortPhrase). I have a \(understandingPhrase) understanding of the material we have covered thus far. \(weaknessPhrase)."
         return comment
         
     }

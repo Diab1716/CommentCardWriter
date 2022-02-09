@@ -12,31 +12,31 @@ struct ContentView: View {
     var body: some View {
         
         Form{
-            Button("Enjoyment: \(commentData.enjoyment)", action: {commentData.enjoyment += 1
-            if commentData.enjoyment > 4{
+            Button("Enjoyment: \(commentGenerator.enjoymentPhrases[commentData.enjoyment].capitalized)", action: {commentData.enjoyment += 1
+                if commentData.enjoyment > commentGenerator.enjoymentPhrases.count-1{
                 commentData.enjoyment = 0
             }
         })
-            Button("Subject: \(commentGenerator.subjectPhrases[commentData.subject])", action: {commentData.subject += 1
-            if commentData.subject > 4{
+            Button("Subject: \(commentGenerator.subjectPhrases[commentData.subject].capitalized)", action: {commentData.subject += 1
+                if commentData.subject > commentGenerator.subjectPhrases.count-1{
                 commentData.subject = 0
             }
         })
-            Button("Effort: \(commentData.effort)", action:
+            Button("Effort: \(commentGenerator.effortPhrases[commentData.effort].capitalized)", action:
                     {commentData.effort += 1
-            if commentData.effort > 4{
+                if commentData.effort > commentGenerator.effortPhrases.count-1{
                 commentData.effort = 0
             }
         })
-            Button("Understanding: \(commentData.understanding)", action:
+            Button("Understanding: \(commentGenerator.understandingPhrases[commentData.understanding].capitalized)", action:
                     {commentData.understanding += 1
-            if commentData.understanding > 4{
+                if commentData.understanding > commentGenerator.understandingPhrases.count-1{
                 commentData.understanding = 0
             }
         })
             Button("Weakness: \(commentData.weakness)", action:
                     {commentData.weakness += 1
-            if commentData.weakness > 4{
+                if commentData.weakness > commentGenerator.weaknessPhrases.count-1{
                 commentData.weakness = 0
             }
         })
