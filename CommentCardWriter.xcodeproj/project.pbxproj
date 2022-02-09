@@ -78,6 +78,7 @@
 		B6E951BB27AD4C5500F7AFB5 = {
 			isa = PBXGroup;
 			children = (
+				B6E951CD27AD4C5700F7AFB5 /* Preview Content */,
 				B6E951F227AD4D6800F7AFB5 /* Model */,
 				B6E951C627AD4C5500F7AFB5 /* Views */,
 				B6E951D727AD4C5700F7AFB5 /* CommentCardWriterTests */,
@@ -102,7 +103,6 @@
 				B6E951C927AD4C5500F7AFB5 /* ContentView.swift */,
 				B6E951C727AD4C5500F7AFB5 /* CommentCardWriterApp.swift */,
 				B6E951CB27AD4C5700F7AFB5 /* Assets.xcassets */,
-				B6E951CD27AD4C5700F7AFB5 /* Preview Content */,
 			);
 			path = Views;
 			sourceTree = "<group>";
