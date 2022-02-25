@@ -12,6 +12,7 @@ struct ContentView: View {
     var body: some View {
         
         Form{
+            Text("Comment Card Generator")
             Button("Enjoyment: \(commentGenerator.enjoymentPhrases[commentData.enjoyment].capitalized)", action: {commentData.enjoyment += 1
                 if commentData.enjoyment > commentGenerator.enjoymentPhrases.count-1{
                 commentData.enjoyment = 0
